@@ -1,0 +1,79 @@
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a subtle background color */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Center the content on the page */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the header */
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Style the main content */
+main {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Style links */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add a subtle footer */
+footer {
+  background-color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    margin-top: 10px;
+  }
+}
