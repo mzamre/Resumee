@@ -3,7 +3,7 @@ pipeline{
       
     stages{
         stage('checkout scm in mohit'){
-            step{
+            steps{
                sh '''
                cd /home/mohit
                git clone  https://github.com/mzamre/Resumee.git
@@ -11,7 +11,7 @@ pipeline{
            }  
         }
          stage('creating maven project'){
-            step{
+            steps{
                 sh '''
                 cd /home/mohit
                 mvn archetype:generate -DgroupId=com.resume -DartifactId=resume -Dversion=1.0-SNAPSHOT -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp
@@ -20,7 +20,7 @@ pipeline{
 
         }
         stage('copying code to main'){
-            step{
+            steps{
                 sh '''
                 cd /home/mohit/resume/src/main/webapp
                 rm -rf index.jsp
@@ -30,7 +30,7 @@ pipeline{
             }
         }
         stage('building maven project'){
-            step{
+            steps{
                 sh '''
                 cd /home/mohit
                 mvn install
